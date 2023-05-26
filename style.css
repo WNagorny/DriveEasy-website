@@ -29,20 +29,18 @@ html::-webkit-scrollbar-thumb{
 }
 
 section{
-   padding: 50px 100px;
+   padding: 50px 200px;
 }
 
 .header{
    display: flex;
-   position: fixed;
+   justify-content: center;
    width: 100%;
-   top: 0;
-   right: 0;
    z-index: 100;
    align-items: center;
    justify-content: space-between;
    background-color: #eeeff1;
-   padding: 15px 100px;
+   padding: 15px 200px;
 }
 
 .logo img{
@@ -131,13 +129,18 @@ section{
 .home{
    display: grid;
    align-items: center;
-   grid-template-columns: repeat(2, 1fr);
+   /* grid-template-columns: repeat(2, 1fr); */
    width: 100%;
    min-height: 100vh;
    position: relative;
    background: url('./images/img/Car\ Website\ –\ 1@2x.png');
    background-repeat: no-repeat;
    background-size: cover;
+}
+
+.home .car{
+   width: 300px;
+   height: 300px;
 }
 
 .text h1{
@@ -160,4 +163,98 @@ section{
    width: 120px;
    margin-right: 1rem;
    cursor: pointer;
+}
+
+.form-container form{
+   display: flex;
+   position: absolute;
+   flex-wrap: wrap;
+   align-items: center;
+   gap: 1rem;
+   bottom: 7rem;
+   left: 12rem;
+   background: #fff;
+   padding: 20px ;
+   border-radius: 0.5rem;
+}
+
+.input-box{
+   display: flex;
+   flex: 1 1 7rem;
+   flex-direction: column;
+}
+
+.input-box span{
+   font-weight: 500;
+}
+
+.input-box input{
+   padding: 7px;
+   outline: none;
+   border: none;
+   background:#eeeff1;
+   border-radius: 0.5rem;
+   font-size: 1rem;
+}
+
+.form-container form .btn{
+   flex: 1 1 7rem;
+   padding: 10px 34px;
+   border-radius: 0.5rem;
+   background-color: #474fa0;
+   color: #fff;
+   font-size: 1rem;
+   font-weight: 500;
+   transition: background-color .2s ;
+   cursor: pointer;
+}
+
+.form-container form .btn:hover{
+   background-color: var(--main-color) ;
+}
+
+.heading{
+   text-align: center;
+}
+
+.heading span{
+   font-weight: 500;
+   text-transform: uppercase;
+}
+
+.heading h1{
+   font-size: 2rem;
+}
+
+.ride-container{
+   display: grid;
+   align-items: center;
+   grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+   gap: 1rem;
+   margin-top: 2rem;
+}
+
+.ride-container .box{
+   text-align: center;
+   padding: 20px;
+}
+
+.ride-container .box .bx{
+   font-size: 30px;
+   padding: 10px;
+   background-color: #eeeff1;
+   border-radius: .5rem;
+   color: var(--main-color);
+}
+
+.ride-container .box h2{
+   font-size: 1.3rem;
+   font-weight: 500;
+   margin: 1.4rem 0 .5rem;
+}
+
+.ride-container .box .bx:hover,
+.ride-container .box .bxs-calendar-check{
+   color: #fff;
+   background: var(--gradient);
 }
