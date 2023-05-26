@@ -30,7 +30,6 @@ html::-webkit-scrollbar-thumb{
 
 section{
    padding: 50px 100px;
-   background-color: red;
 }
 
 .header{
@@ -127,4 +126,38 @@ section{
 
 .header-btn .sign-in:hover{
    background: var(--main-color);
+}
+
+.home{
+   display: grid;
+   align-items: center;
+   grid-template-columns: repeat(2, 1fr);
+   width: 100%;
+   min-height: 100vh;
+   position: relative;
+   background: url('./images/img/Car\ Website\ –\ 1@2x.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.text h1{
+   font-size: 3.5rem;
+}
+
+.text span{
+   color: var(--main-color);
+}
+
+.text p{
+   margin: 0 1rem 2rem 0;
+}
+
+.app-stores{
+   display: flex;
+}
+
+.app-stores img{
+   width: 120px;
+   margin-right: 1rem;
+   cursor: pointer;
 }
