@@ -262,12 +262,13 @@ section{
 
 .services-container{
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+   grid-template-columns: repeat(3, minmax(200px, auto));
    gap: 1rem;
    margin-top: 2rem;
 }
 
 .services-container .box{
+   width: 350px;
    padding: 10px;
    border-radius: 1rem;
    box-shadow: 1px 4px 41px rgba(0,0,0, 0.1);
@@ -322,5 +323,43 @@ section{
 }
 
 .services-container .box .btn:hover{
+   background-color: var(--main-color);
+}
+
+
+
+
+.about-container{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   margin-top: 1rem;
+   align-items: center;
+   gap: 1rem;
+   margin-top: 1rem;
+}
+
+.about-img img{
+   width: 100%;
+}
+
+.about-text span {
+   font-weight: 500;
+   color: var(--main-color);
+   text-transform: uppercase;
+}
+
+.about-text p{
+   margin: 0.5rem 0 1.4rem;
+}
+
+.about-text .btn{
+   padding: 10px 20px;
+   background-color: #474fa0;
+   color: #fff;
+   border-radius: 0.5rem;
+   transition: background-color 0.2s;
+}
+
+.about-text .btn:hover{
    background-color: var(--main-color);
 }
