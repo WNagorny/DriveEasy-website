@@ -29,8 +29,11 @@ html::-webkit-scrollbar-thumb{
 }
 
 section{
-   padding: 50px 200px;
+   padding: 80px 200px;
 }
+
+/*  ----------HEADER SECTION------------  */
+
 
 .header{
    display: flex;
@@ -126,6 +129,10 @@ section{
 .header-btn .sign-in:hover{
    background: var(--main-color);
 }
+
+
+/*  ----------HOME SECTION------------  */
+
 
 .home{
    display: grid;
@@ -227,6 +234,9 @@ section{
    font-size: 2rem;
 }
 
+/*  ----------RIDE SECTION------------  */
+
+
 .ride-container{
    display: grid;
    align-items: center;
@@ -259,6 +269,10 @@ section{
    color: #fff;
    background: var(--gradient);
 }
+
+
+/*  ----------SERVICES SECTION------------  */
+
 
 .services-container{
    display: grid;
@@ -327,6 +341,7 @@ section{
 }
 
 
+/*  ----------ABOUT SECTION------------  */
 
 
 .about-container{
@@ -363,6 +378,9 @@ section{
 .about-text .btn:hover{
    background-color: var(--main-color);
 }
+
+
+/*  ----------REVIEWS SECTION------------  */
 
 .reviews-container{
    display: grid;
@@ -408,3 +426,58 @@ section{
 .reviews-container .box .stars .bx{
    color: var(--main-color);
 }
+
+/*  ----------NewsLetter SECTION------------  */
+
+
+.newsletter{
+   background: linear-gradient(to top right, #fe5b3d, #ffac38) ;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.newsletter h2{
+   color: #fff;
+   font-size: 1.8rem;
+}
+
+.newsletter .box{
+   margin-top: 1rem;
+   background: #fff;
+   border-radius: 0.5rem;
+   padding: 4px 8px;
+   width: 350px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.newsletter .box input{
+   border: none;
+   outline: none;
+}
+
+.newsletter .box .btn{
+   background: #474fa0;
+   color: #fff;
+   padding: 8px 20px;
+   border-radius: 0.5rem;
+}
+
+.copyright{
+   padding: 20px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.social a{
+   color: #444;
+   padding: 10px;
+   font-size: 21px;
+}
+
+.copyright p{
+   color: #918888;
+}
+
